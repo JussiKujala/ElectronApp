@@ -3,11 +3,16 @@
     "version": "1.0.0",
     "description": "My first Electron app",
     "main": "main.js",
+    "type": "module",
     "scripts": {
-      "start": "concurrently \"npm run electron\" \"cd frontend && npm start\"",
-      "electron": "electron ."
-  },
+        "start": "concurrently \"npm run electron\" \"cd frontend && npm start\"",
+        "electron": "electron ."
+    },
     "devDependencies": {
-      "electron": "^29.0.0"
+        "concurrently": "^9.1.2",
+        "electron": "^29.0.0"
+    },
+    "dependencies": {
+        "electron-is-dev": "^3.0.1"
     }
-  }
+}

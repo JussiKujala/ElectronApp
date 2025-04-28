@@ -1,6 +1,6 @@
-const { app, BrowserWindow } = require('electron');
-const path = require('path');
-const isDev = require('electron-is-dev'); // Tämä paketti tunnistaa kehitysympäristön
+import path from 'path';
+import { app, BrowserWindow } from 'electron';
+import isDev from 'electron-is-dev';
 
 function createWindow() {
   const win = new BrowserWindow({
